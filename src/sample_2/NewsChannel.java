@@ -1,0 +1,20 @@
+package sample_2;
+
+public class NewsChannel implements Channel {
+    private String news;
+
+    @Override
+    public void update(Object news) {
+        this.setNews((String) news);
+    }
+
+    // standard getter and setter
+
+    public String getNews() {
+        return news;
+    }
+
+    public void setNews(String news) {
+        this.news = news;
+    }
+}
